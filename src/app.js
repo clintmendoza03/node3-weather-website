@@ -58,7 +58,7 @@ app.get('/weather', (req,res) => {
          res.send({
               forecast: forecastData,
               Location,
-              address: req.query.address
+              //address: req.query.address
         })
        })
    })
@@ -89,30 +89,6 @@ app.get('*', (req, res) =>{
         msgError: 'Page not found'
     })
 })
-
-
-//app.com
-// app.get('', (req, res) =>{
-//     res.send('<h1>Hello express!</h1>')
-// })
-
-//app.com/help
-// app.get('/help', (req,res) => {
-//     res.send('Help page!')
-// })
-// //app.com/about
-// app.get('/about', (req,res) => {
-//     res.send([{
-//         name: 'Clinton Mendoza',
-//         age: 26
-//        },
-//        {
-//         name: 'Clint',
-//         age: 'never aged'
-//        }
-//     ])
-// })
-//app.com/weather
 
 app.listen(port, ()=> {
     console.log('Server is up on port ' + port)
